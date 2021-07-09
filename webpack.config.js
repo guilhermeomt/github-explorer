@@ -8,6 +8,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'public'),
+  },
   plugins: [
     new htmlWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html'),
